@@ -1,0 +1,29 @@
+USE [20231119]
+GO
+
+/****** Object:  Table [dbo].[frommomo]    Script Date: 2024/1/15 下午 03:11:19 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[frommomo](
+	[p_id] [int] IDENTITY(1,1) NOT NULL,
+	[id] [nvarchar](max) NULL,
+	[site] [nvarchar](max) NULL,
+	[productname] [nvarchar](max) NULL,
+	[brandname] [nvarchar](max) NULL,
+	[specification] [nvarchar](max) NULL,
+	[price] [nvarchar](max) NULL,
+	[photo] [image] NULL,
+	[createdate] [datetime] NULL,
+	[searchby] [nvarchar](max) NULL,
+ CONSTRAINT [PK_frommomo] PRIMARY KEY CLUSTERED 
+(
+	[p_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
